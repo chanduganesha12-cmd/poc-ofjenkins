@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="3f6a1bc7-b92f-4ec9-84ff-1c8577ee47c8" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="testFlow" doc:id="e1296210-686e-4d1c-a176-68fda0e4656e" >
+		<http:listener doc:name="Listener" doc:id="6056b1e5-2b16-4e08-be36-765833d669a5" config-ref="HTTP_Listener_config" path="/test"/>
+		<http:request method="GET" doc:name="Request" doc:id="b9b7d69d-d7f4-48d2-bdee-f28c518fa26e" url="https://policy-poc-sd5zwz.5sc6y6-2.usa-e2.cloudhub.io/api/test"/>
+		<!-- [STUDIO:"Choice"]<choice doc:name="Choice" doc:id="c7024d0a-d04d-4adf-9e27-7fe1c5083f39" >
+			<when expression="#[isEmpty(payload)&#93;">
+				<logger level="INFO" doc:name="Logger" doc:id="5c7aa555-2b55-4c86-98a4-8f4ac334bb50" message='#["no data found"&#93;'/>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="e348b254-2c5c-4762-9fd9-f78eb08deba6">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+&#45;&#45;-
+"my name is " ++ payload.fname ++ " " ++ payload.lname&#93;&#93;></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+			</otherwise>
+		</choice> [STUDIO] -->
+		<ee:transform doc:name="Transform Message" doc:id="ec6bb450-37d1-45e7-aa28-e7952dd2fc3b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

@@ -42,7 +42,6 @@
 						<applicationName>jenkins</applicationName>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
-						<objectStoreV2>true</objectStoreV2>
 						<deploymentSettings>
         					<http>
           						<inbound>

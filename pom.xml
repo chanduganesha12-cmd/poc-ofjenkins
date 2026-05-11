@@ -39,9 +39,7 @@
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<environment>Sandbox</environment>
-						<target>${targetName}</target>
 						<applicationName>jenkins</applicationName>
-						<business>${business}</business>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 						<objectStoreV2>true</objectStoreV2>
@@ -54,7 +52,6 @@
           						</inbound>
         					</http>
       					</deploymentSettings>
-				  <classifier>mule-application</classifier>
 				  </cloudhub2Deployment>
 				</configuration>		
 			</plugin>

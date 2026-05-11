@@ -16,7 +16,7 @@
 		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.4.0</mule.maven.plugin.version>
 		<munit.version>3.4.0</munit.version>
-		<targetName>Shared Space</targetName>
+		<targetName>Cloudhub-US-East-1</targetName>
 	</properties>
 
 	<build>
@@ -39,20 +39,11 @@
 						<muleVersion>4.9.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<target>Shared Space</target>
+						<target>Cloudhub-US-East-1</target>
 						<environment>Sandbox</environment>
 						<applicationName>jenkins-demo-real</applicationName>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
-						<deploymentSettings>
-        					<http>
-          						<inbound>
-            					<publicUrl>${publicURL}</publicUrl>
-           						 <forwardSslSession>true</forwardSslSession>
-           						 <lastMileSecurity>true</lastMileSecurity>
-          						</inbound>
-        					</http>
-      					</deploymentSettings>
 				  </cloudhub2Deployment>
 				</configuration>		
 			</plugin>

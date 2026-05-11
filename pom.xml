@@ -45,7 +45,7 @@
 						<applicationName>jenkins-demo-real</applicationName>
 						<connectedAppClientId>1230d88fbcc84c788ed2e7866124f2c1</connectedAppClientId>
 						<connectedAppClientSecret>6e8aC537599d4F86bb35B8f08169a172</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<connectedAppGrantType>Password</connectedAppGrantType>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 				  </cloudhub2Deployment>

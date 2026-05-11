@@ -55,7 +55,7 @@
         					</http>
       					</deploymentSettings>
 				    <cloudHub2Deployment>
-				<classifier>mule-application</classifier>
+				  <classifier>mule-application</classifier>
 				</configuration>		
 			</plugin>
 			<plugin>

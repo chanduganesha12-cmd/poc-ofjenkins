@@ -39,6 +39,7 @@
 						<muleVersion>4.9.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
+						<targetName>Cloudhub-US-East-2</targetName>
 						<environment>Sandbox</environment>
 						<applicationName>jenkins</applicationName>
 						<replicas>1</replicas>

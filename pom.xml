@@ -41,7 +41,7 @@
 						<password>${anypoint.password}</password>
 						<target>Cloudhub-US-East-2</target>
 						<environment>Sandbox</environment>
-						<applicationName>jenkins</applicationName>
+						<applicationName>jenkins-demo-real</applicationName>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 						<deploymentSettings>

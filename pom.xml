@@ -37,12 +37,8 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<muleVersion>4.9.0</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<skipDeploymentVerification>true</skipDeploymentVerification>
 						<target>Cloudhub-US-East-2</target>
 						<environment>Sandbox</environment>
-						<businessGroupId>1754d540-c846-43a8-8a58-0b1b1a0c011d</businessGroupId>
 						<applicationName>jenkins-demo-real</applicationName>
 						<connectedAppClientId>341e3f6ba84e4ffe9d21bf8b9e55d2ed</connectedAppClientId>
 						<connectedAppClientSecret>6cC9eef5418B408980B23456bD77F47E</connectedAppClientSecret>

@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.9.0</app.runtime>
-		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+		<mule.maven.plugin.version>4.4.0</mule.maven.plugin.version>
 		<munit.version>3.4.0</munit.version>
 	</properties>
 
@@ -32,15 +32,15 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHub2Deployment>
+					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<muleVersion>${mule.version}</muleVersion>
+						<muleVersion>4.9.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<environment>${environment}</environment>
+						<environment>Sandbox</environment>
 						<target>${targetName}</target>
-						<applicationName>${appName}</applicationName>
+						<applicationName>jenkins</applicationName>
 						<business>${business}</business>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
@@ -55,7 +55,7 @@
         					</http>
       					</deploymentSettings>
 				  <classifier>mule-application</classifier>
-				  </cloudHub2Deployment>
+				  </cloudhub2Deployment>
 				</configuration>		
 			</plugin>
 			<plugin>

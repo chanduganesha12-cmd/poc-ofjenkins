@@ -25,11 +25,38 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.7.1</version>
 				<extensions>true</extensions>
+				<configuration>
+					<cloudHub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<provider>MC</provider>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<environment>${environment}</environment>
+						<target>${targetName}</target>
+						<applicationName>${appName}</applicationName>
+						<businessGroup>${business}</business>
+						<replicas>1</replicas>
+						<vCores>1</vCores>
+						<objectStoreV2>true</objectStoreV2>
+						<deploymentSettings>
+        					<http>
+          						<inbound>
+            					<publicUrl>${publicURL}</publicUrl>
+           						 <forwardSslSession>true</forwardSslSession>
+           						 <lastMileSecurity>true</lastMileSecurity>
+          						</inbound>
+        					</http>
+      					</deploymentSettings>
+				    <cloudHub2Deployment>
+				<classifier>mule-application</classifier>
+				</configuration>		
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>

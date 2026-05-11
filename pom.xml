@@ -43,9 +43,9 @@
 						<target>Cloudhub-US-East-2</target>
 						<environment>Sandbox</environment>
 						<applicationName>jenkins-demo-real</applicationName>
-						<connectedAppClientId>1230d88fbcc84c788ed2e7866124f2c1</connectedAppClientId>
-						<connectedAppClientSecret>6e8aC537599d4F86bb35B8f08169a172</connectedAppClientSecret>
-						<connectedAppGrantType>password</connectedAppGrantType>
+						<connectedAppClientId>341e3f6ba84e4ffe9d21bf8b9e55d2ed</connectedAppClientId>
+						<connectedAppClientSecret>6cC9eef5418B408980B23456bD77F47E</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 				  </cloudhub2Deployment>

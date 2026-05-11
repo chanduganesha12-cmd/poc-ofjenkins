@@ -45,6 +45,7 @@
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 				  </cloudhub2Deployment>
+				  <classifier>mule-application</classifier>
 				</configuration>		
 			</plugin>
 			<plugin>

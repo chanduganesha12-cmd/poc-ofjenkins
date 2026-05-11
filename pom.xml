@@ -41,7 +41,7 @@
 						<environment>${environment}</environment>
 						<target>${targetName}</target>
 						<applicationName>${appName}</applicationName>
-						<businessGroup>${business}</business>
+						<business>${business}</business>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 						<objectStoreV2>true</objectStoreV2>

@@ -34,7 +34,6 @@
 				<configuration>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<provider>MC</provider>
 						<muleVersion>4.9.0</muleVersion>
 						<target>Cloudhub-US-East-2</target>
 						<businessGroupId>1754d540-c846-43a8-8a58-0b1b1a0c011d</businessGroupId>

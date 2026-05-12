@@ -16,7 +16,6 @@
 		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.4.0</mule.maven.plugin.version>
 		<munit.version>3.4.0</munit.version>
-		<targetName>Cloudhub-US-East-2</targetName>
 	</properties>
 
 	<build>
@@ -43,8 +42,6 @@
 						<connectedAppClientId>341e3f6ba84e4ffe9d21bf8b9e55d2ed</connectedAppClientId>
 						<connectedAppClientSecret>6cC9eef5418B408980B23456bD77F47E</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<replicas>1</replicas>
-						<vCores>1</vCores>
 				  </cloudhub2Deployment>
 				  <classifier>mule-application</classifier>
 				</configuration>		
